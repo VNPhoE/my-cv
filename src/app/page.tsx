@@ -1,8 +1,9 @@
 import { DownloadButton } from "@/components/DownloadButton"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar } from "lucide-react"
+// import { Calendar } from "lucide-react"
 import { ContactInfo } from "@/components/ContactInfo"
+import Image from "next/image";
 
 export default function CV() {
   return (
@@ -11,7 +12,7 @@ export default function CV() {
         {/* Header / Thông tin cá nhân */}
         <div className="flex flex-col md:flex-row gap-6 items-start md:items-center mb-8">
           <div className="w-32 h-32 rounded-full overflow-hidden bg-muted">
-            <img src="images/avt.jpg" alt="Avatar" className="w-full h-full object-cover" />
+            <Image src="/images/avt.jpg" alt="Mo ta" width={500} height={300} />
           </div>
           <div className="flex-1">
             <div className="flex justify-between items-start">
